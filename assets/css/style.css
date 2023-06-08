@@ -32,6 +32,7 @@ a {
 :root {
     --color: #006241;
     --color-1: #1e3932;
+    --font-weight: 400;
 }
 
 /* HEADER */
@@ -148,7 +149,7 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 100;
+    font-weight: var(--font-weight);
 }
 
 .block-1 .info .link {
@@ -159,8 +160,9 @@ a {
     height: 40px;
     border: 1px solid #fff;
     border-radius: 50px;
-    padding: 8px 8px 6px;
+    padding: 9px 8px 6px;
     text-align: center;
+    font-weight: normal;
 }
 
 .block-1 .info .link:hover {
@@ -221,12 +223,12 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 0;
+    font-weight: var(--font-weight);
 }
 
 .block-2 .info-2 .link-2 {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 20px;
     color: var(--color-1);
     width: 110px;
     height: 40px;
@@ -287,7 +289,7 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 0;
+    font-weight: var(--font-weight);
 }
 
 .block-3 .info-3 .link-3 {
@@ -353,7 +355,7 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 0;
+    font-weight: var(--font-weight);
 }
 
 .block-4 .info-4 .link-4 {
@@ -405,7 +407,7 @@ a {
     margin-top: 5px;
     width: 500px;
     height: 36px;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
@@ -420,7 +422,7 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 0;
+    font-weight: var(--font-weight);
 }
 
 .block-5 .info-5 .link-5 {
@@ -471,9 +473,9 @@ a {
     display: inline;
     text-align: center;
     margin-top: 5px;
-    width: 400px;
+    width: 500px;
     height: 36px;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     color: #fff;
     letter-spacing: 1px;
     line-height: 1.8;
@@ -488,7 +490,7 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 0;
+    font-weight: var(--font-weight);
 }
 
 .block-6 .info-6 .link-6 {
@@ -523,15 +525,16 @@ a {
     height: 90px;
     line-height: 1.8;
     font-size: 1.3rem;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .guides .desc2 {
-    font-size: 1.3rem;
-    font-weight: normal;
     margin-top: 120px;
     width: 610px;
     height: 100px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-weight: 400;
 }
 
 .separate {
@@ -564,6 +567,7 @@ a {
 .Service .row .list a {
     color: #00000094;
     line-height: 1.5;
+    font-size: 1.6rem;
 }
 
 /* footer */
@@ -590,11 +594,12 @@ a {
 
 .footer-logo .row-bottom li {
     margin-right: 40px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .footer-logo .row-bottom a {
-    font-weight: 200;
+    color: #000000DE;
+    font-weight: 500;
 }
 
 .footer-logo .row-bottom a:hover {
@@ -603,6 +608,6 @@ a {
 
 .footer-logo .desc {
     margin-top: 30px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #00000094;
 }
