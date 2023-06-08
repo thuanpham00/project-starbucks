@@ -162,9 +162,11 @@ a {
     padding: 8px 8px 6px;
     text-align: center;
 }
+
 .block-1 .info .link:hover {
     background-color: rgb(0, 0, 0, 0.1);
 }
+
 .block-1 .img-info img {
     display: block;
     object-fit: cover;
