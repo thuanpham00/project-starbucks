@@ -13,9 +13,10 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "SoDo sans";
+    font-family: "SoDo Sans";
 }
 
+/* Common (thành phần dùng chung) */
 .content {
     width: 1440px;
     max-width: calc(100% - 48px);
@@ -26,6 +27,11 @@ body {
 a {
     text-decoration: none;
     color: #000000de;
+}
+
+:root {
+    --color: #006241;
+    --color-1: #1e3932;
 }
 
 /* HEADER */
@@ -56,19 +62,17 @@ a {
 
 .header .navbar .list li:hover {
     color:#006241;
-    text-decoration: underline #006241;
+    text-decoration: underline var(--color);
 }
 
 .header .location_login {
     display: flex;
     margin-left: auto;
 }
-.header .button {
-    align-items: center;
-}
+
 .header .location_login .btn {
     display: inline-block;
-    width: 100px;
+    min-width: 100px;
     height: 40px;
     background-color: #000;
     color: #fff;
@@ -80,25 +84,24 @@ a {
     margin-left: 10px;
 }
 
-.header .location_login .button .btn1 {
+.header .location_login .btn1 {
     background-color: #fff;
-    border: 2px solid #000;
     color: #000;
-    transition: 0.3s all;
+    border: 2px solid #000;
+    transition: 0.3s background-color;
 }
 
-.header .location_login .button .btn1:hover {
+.header .location_login .btn1:hover {
     background-color: #ebebebeb;
-    opacity: 0.7;
 }
 
-.header .location_login .loca {
+.header .location_login .local {
     display: flex;
     align-items: center;
     margin-right: 25px;
 }
 
-.header .location_login .loca .icon {
+.header .location_login .local .icon {
     margin-right: 10px;
 }
 
@@ -109,12 +112,13 @@ a {
     margin-top: 30px;
     display: flex;
 }
-.noidung .info,
-.noidung .img-info {
+
+.noidung .info, .noidung .img-info {
     width: 50%;
 }
+
 .noidung .info {
-    background-color: #006241;
+    background-color: var(--color);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -124,7 +128,7 @@ a {
 .noidung .info .sub-title {
     text-align: center;
     margin-top: 5px;
-    min-width: 290px;
+    width: 300px;
     height: 36px;
     font-size: 4.8rem;
     color: #ffffff;
@@ -141,7 +145,7 @@ a {
     height: 100px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 0;
+    font-weight: 100;
 }
 
 .noidung .info .link {
@@ -195,10 +199,10 @@ a {
 .noidung-2 .info-2 .sub-title-2 {
     text-align: center;
     margin-top: 5px;
-    min-width: 290px;
+    width: 400px;
     height: 36px;
     font-size: 4.8rem;
-    color: #1e3932;
+    color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
     font-weight: 700;
@@ -207,7 +211,7 @@ a {
 .noidung-2 .info-2 .desc-2 {
     margin-top: 100px;
     font-size: 2.4rem;
-    color: #1e3932;
+    color: var(--color-1);
     width: 550px;
     height: 100px;
     text-align: center;
@@ -218,10 +222,10 @@ a {
 .noidung-2 .info-2 .link-2 {
     display: inline-block;
     margin-top: 40px;
-    color: #1e3932;
+    color: var(--color-1);
     width: 110px;
     height: 40px;
-    border: 1px solid #1e3932;
+    border: 1px solid var(--color-1);
     border-radius: 50px;
     padding: 10px 10px 6px;
     text-align: center;
@@ -261,10 +265,10 @@ a {
 .noidung-3 .info-3 .sub-title-3 {
     text-align: center;
     margin-top: 5px;
-    min-width: 290px;
+    width: 400px;
     height: 36px;
     font-size: 4.8rem;
-    color: #1e3932;
+    color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
     font-weight: 700;
@@ -273,7 +277,7 @@ a {
 .noidung-3 .info-3 .desc-3 {
     margin-top: 100px;
     font-size: 2.4rem;
-    color: #1e3932;
+    color: var(--color-1);
     width: 550px;
     height: 100px;
     text-align: center;
@@ -284,10 +288,10 @@ a {
 .noidung-3 .info-3 .link-3 {
     display: inline-block;
     margin-top: 40px;
-    color: #1e3932;
+    color: var(--color-1);
     width: 110px;
     height: 40px;
-    border: 1px solid #1e3932;
+    border: 1px solid var(--color-1);
     border-radius: 50px;
     padding: 10px 10px 6px;
     text-align: center;
@@ -327,19 +331,19 @@ a {
 .noidung-4 .info-4 .sub-title-4 {
     text-align: center;
     margin-top: 5px;
-    min-width: 290px;
+    width: 500px;
     height: 36px;
     font-size: 4.8rem;
-    color: #1e3932;
+    color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
     font-weight: 700;
 }
 
 .noidung-4 .info-4 .desc-4 {
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 2.4rem;
-    color: #1e3932;
+    color: var(--color-1);
     width: 550px;
     height: 100px;
     text-align: center;
@@ -350,10 +354,10 @@ a {
 .noidung-4 .info-4 .link-4 {
     display: inline-block;
     margin-top: 40px;
-    color: #1e3932;
+    color: var(--color-1);
     width: 110px;
     height: 40px;
-    border: 1px solid #1e3932;
+    border: 1px solid var(--color-1);
     border-radius: 50px;
     padding: 10px 10px 6px;
     text-align: center;
@@ -394,10 +398,10 @@ a {
 .noidung-5 .info-5 .sub-title-5 {
     text-align: center;
     margin-top: 5px;
-    min-width: 290px;
+    width: 500px;
     height: 36px;
     font-size: 2.4rem;
-    color: #1e3932;
+    color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
     font-weight: 700;
@@ -406,7 +410,7 @@ a {
 .noidung-5 .info-5 .desc-5 {
     margin-top: 20px;
     font-size: 1.8rem;
-    color: #1e3932;
+    color: var(--color-1);
     width: 550px;
     height: 100px;
     text-align: center;
@@ -417,10 +421,10 @@ a {
 .noidung-5 .info-5 .link-5 {
     display: inline-block;
     margin-top: 30px;
-    color: #1e3932;
+    color: var(--color-1);
     width: 110px;
     height: 40px;
-    border: 1px solid #1e3932;
+    border: 1px solid var(--color-1);
     border-radius: 50px;
     padding: 10px 10px 6px;
     text-align: center;
@@ -451,7 +455,7 @@ a {
 
 .noidung-6 .info-6 {
     height: 420px;
-    background-color: #1e3932;
+    background-color: var(--color-1);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -462,7 +466,7 @@ a {
     display: inline;
     text-align: center;
     margin-top: 5px;
-    min-width: 290px;
+    width: 400px;
     height: 36px;
     font-size: 2.2rem;
     color: #fff;
