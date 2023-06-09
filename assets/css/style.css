@@ -38,7 +38,7 @@ a {
 /* HEADER */
 .header {
     position: sticky;
-    top: 0;
+    top: -15px;
     z-index: 1;
     height: 100px;
     padding: 25px 0;
@@ -116,7 +116,6 @@ a {
 /* noi dung */
 /* noi dung 1 */
 .block-1 {
-    width: 1440px;
     margin-top: 30px;
     display: flex;
 }
@@ -185,7 +184,6 @@ a {
 
 /* noi dung 2 */
 .block-2 {
-    width: 1440px;
     margin-top: 30px;
     display: flex;
 }
@@ -251,7 +249,6 @@ a {
 
 /* noi dung 3 */
 .block-3 {
-    width: 1440px;
     margin-top: 30px;
     display: flex;
 }
@@ -317,7 +314,6 @@ a {
 
 /* noi dung 4 */
 .block-4 {
-    width: 1440px;
     margin-top: 30px;
     display: flex;
 }
@@ -383,7 +379,6 @@ a {
 
 /* noi dung 5 */
 .block-5 {
-    width: 1440px;
     margin-top: 30px;
     display: flex;
 }
@@ -450,7 +445,6 @@ a {
 
 /* noi dung 6 */
 .block-6 {
-    width: 1440px;
     margin-top: 30px;
     display: flex;
 }
