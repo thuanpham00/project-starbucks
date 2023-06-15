@@ -124,7 +124,7 @@ a {
 .block-1 .img-info {
     width: calc(50vw - 40px);
     /* viewport-width là chiều rộng của trình duyệt */
-    /* Phần tử chiếm 50% của trình duyệt */
+    /* Phần tử chiếm 50% của màn hình trình duyệt */
 }
 
 .block-1 .info {
@@ -136,11 +136,15 @@ a {
 }
 
 .block-1 .info .sub-title {
-    text-align: center;
     margin-top: 5px;
+    text-align: center;
     width: 300px;
     height: 50px;
     font-size: 4.8rem;
+    max-width: 100%;
+    /* Sử dụng max-width: 100%;, 
+    điều này đảm bảo rằng chữ không tràn ra ngoài box và tự động co lại 
+    phù hợp với kích thước của box khi phóng to hoặc thu nhỏ. */
     color: #ffffff;
     letter-spacing: 1px;
     line-height: 1.2;
@@ -150,6 +154,7 @@ a {
 .block-1 .info .desc {
     margin-top: 100px;
     font-size: 2.4rem;
+    max-width: 100%;
     color: #ffffff;
     width: 500px;
     height: 100px;
@@ -159,8 +164,8 @@ a {
 }
 
 .block-1 .info .link {
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 40px;
     color: #fff;
     width: 110px;
     height: 40px;
@@ -214,6 +219,7 @@ a {
     width: 400px;
     height: 36px;
     font-size: 4.8rem;
+    max-width: 100%;
     color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
@@ -223,6 +229,7 @@ a {
 .block-2 .info-2 .desc-2 {
     margin-top: 100px;
     font-size: 2.4rem;
+    max-width: 100%;
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -232,8 +239,8 @@ a {
 }
 
 .block-2 .info-2 .link-2 {
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 20px;
     color: var(--color-1);
     width: 110px;
     height: 40px;
@@ -279,6 +286,7 @@ a {
     width: 400px;
     height: 36px;
     font-size: 4.8rem;
+    max-width: 100%;
     color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
@@ -288,6 +296,7 @@ a {
 .block-3 .info-3 .desc-3 {
     margin-top: 100px;
     font-size: 2.4rem;
+    max-width: 100%;
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -297,8 +306,8 @@ a {
 }
 
 .block-3 .info-3 .link-3 {
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 40px;
     color: var(--color-1);
     width: 110px;
     height: 40px;
@@ -344,6 +353,7 @@ a {
     width: 500px;
     height: 36px;
     font-size: 4.8rem;
+    max-width: 100%;
     color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
@@ -353,6 +363,7 @@ a {
 .block-4 .info-4 .desc-4 {
     margin-top: 80px;
     font-size: 2.4rem;
+    max-width: 100%;
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -362,8 +373,8 @@ a {
 }
 
 .block-4 .info-4 .link-4 {
+    margin-top: 50px;
     display: inline-block;
-    margin-top: 40px;
     color: var(--color-1);
     width: 110px;
     height: 40px;
@@ -401,7 +412,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .block-5 .info-5 .sub-title-5 {
@@ -410,6 +421,7 @@ a {
     width: 500px;
     height: 36px;
     font-size: 2.6rem;
+    max-width: 100%;
     color: var(--color-1);
     letter-spacing: 1px;
     line-height: 1.2;
@@ -417,8 +429,9 @@ a {
 }
 
 .block-5 .info-5 .desc-5 {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 1.8rem;
+    max-width: 100%;
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -429,7 +442,7 @@ a {
 
 .block-5 .info-5 .link-5 {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
     color: var(--color-1);
     width: 110px;
     height: 40px;
@@ -467,7 +480,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .block-6 .info-6 .sub-title-6 {
@@ -476,7 +489,8 @@ a {
     margin-top: 5px;
     width: 500px;
     height: 36px;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
+    max-width: 100%;
     color: #fff;
     letter-spacing: 1px;
     line-height: 1.8;
@@ -484,8 +498,9 @@ a {
 }
 
 .block-6 .info-6 .desc-6 {
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 1.8rem;
+    max-width: 100%;
     color: #fff;
     width: 500px;
     height: 100px;
@@ -496,7 +511,7 @@ a {
 
 .block-6 .info-6 .link-6 {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
     color: #fff;
     width: 110px;
     height: 40px;
@@ -545,9 +560,11 @@ a {
     background: rgba(243, 242, 242, 0.87);
 }
 
+/* Service */
 .Service .row {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -563,6 +580,7 @@ a {
 .Service .row .list li {
     margin-bottom: 30px;
     width: 200px;
+    font-size: 1.6rem;   
 }
 
 .Service .row .list a {
@@ -590,6 +608,7 @@ a {
 .footer-logo .row-bottom .list {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -599,7 +618,7 @@ a {
 }
 
 .footer-logo .row-bottom a {
-    color: #000000DE;
+    color: #000000de;
     font-weight: 500;
 }
 
