@@ -16,7 +16,7 @@ body {
     font-family: "SoDo Sans";
 }
 
-/* Common (thành phần dùng chung) */
+/*Common (thành phần dùng chung)*/
 .content {
     width: 1440px;
     max-width: calc(100% - 48px);
