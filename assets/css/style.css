@@ -154,7 +154,7 @@ a {
 .block-1 .info .desc {
     margin-top: 100px;
     font-size: 2.4rem;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     color: #ffffff;
     width: 500px;
     height: 100px;
@@ -229,7 +229,7 @@ a {
 .block-2 .info-2 .desc-2 {
     margin-top: 100px;
     font-size: 2.4rem;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -296,7 +296,7 @@ a {
 .block-3 .info-3 .desc-3 {
     margin-top: 100px;
     font-size: 2.4rem;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -363,7 +363,7 @@ a {
 .block-4 .info-4 .desc-4 {
     margin-top: 80px;
     font-size: 2.4rem;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -431,7 +431,7 @@ a {
 .block-5 .info-5 .desc-5 {
     margin-top: 50px;
     font-size: 1.8rem;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     color: var(--color-1);
     width: 550px;
     height: 100px;
@@ -500,7 +500,7 @@ a {
 .block-6 .info-6 .desc-6 {
     margin-top: 50px;
     font-size: 1.8rem;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     color: #fff;
     width: 500px;
     height: 100px;
