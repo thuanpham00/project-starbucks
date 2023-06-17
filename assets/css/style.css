@@ -35,6 +35,28 @@ a {
     --font-weight: 400;
 }
 
+.btn {
+    margin-top: 50px;
+    display: inline-block;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 9px 8px 6px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.btn-2 {
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+}
+
 /* HEADER */
 .header {
     position: sticky;
@@ -77,7 +99,7 @@ a {
     margin-left: auto;
 }
 
-.header .location_login .btn {
+.header .location_login .btn-header {
     display: inline-block;
     min-width: 100px;
     height: 40px;
@@ -163,23 +185,6 @@ a {
     font-weight: var(--font-weight);
 }
 
-.block-1 .info .link {
-    margin-top: 50px;
-    display: inline-block;
-    color: #fff;
-    width: 110px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    padding: 9px 8px 6px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.block-1 .info .link:hover {
-    background-color: rgb(0, 0, 0, 0.1);
-}
-
 .block-1 .img-info img {
     display: block;
     object-fit: cover;
@@ -238,22 +243,6 @@ a {
     font-weight: var(--font-weight);
 }
 
-.block-2 .info-2 .link-2 {
-    margin-top: 50px;
-    display: inline-block;
-    color: var(--color-1);
-    width: 110px;
-    height: 40px;
-    border: 1px solid var(--color-1);
-    border-radius: 50px;
-    padding: 10px 10px 6px;
-    text-align: center;
-}
-
-.block-2 .info-2 .link-2:hover {
-    background-color: rgb(0, 0, 0, 0.1);
-}
-
 /* noi dung 3 */
 .block-3 {
     margin-top: 30px;
@@ -305,22 +294,6 @@ a {
     font-weight: var(--font-weight);
 }
 
-.block-3 .info-3 .link-3 {
-    margin-top: 50px;
-    display: inline-block;
-    color: var(--color-1);
-    width: 110px;
-    height: 40px;
-    border: 1px solid var(--color-1);
-    border-radius: 50px;
-    padding: 10px 10px 6px;
-    text-align: center;
-}
-
-.block-3 .info-3 .link-3:hover {
-    background-color: rgb(0, 0, 0, 0.1);
-}
-
 /* noi dung 4 */
 .block-4 {
     margin-top: 30px;
@@ -370,22 +343,6 @@ a {
     text-align: center;
     line-height: 1.5;
     font-weight: var(--font-weight);
-}
-
-.block-4 .info-4 .link-4 {
-    margin-top: 50px;
-    display: inline-block;
-    color: var(--color-1);
-    width: 110px;
-    height: 40px;
-    border: 1px solid var(--color-1);
-    border-radius: 50px;
-    padding: 10px 10px 6px;
-    text-align: center;
-}
-
-.block-4 .info-4 .link-4:hover {
-    background-color: rgb(0, 0, 0, 0.1);
 }
 
 /* noi dung 5 */
@@ -440,22 +397,6 @@ a {
     font-weight: var(--font-weight);
 }
 
-.block-5 .info-5 .link-5 {
-    display: inline-block;
-    margin-top: 40px;
-    color: var(--color-1);
-    width: 110px;
-    height: 40px;
-    border: 1px solid var(--color-1);
-    border-radius: 50px;
-    padding: 10px 10px 6px;
-    text-align: center;
-}
-
-.block-5 .info-5 .link-5:hover {
-    background-color: rgb(0, 0, 0, 0.1);
-}
-
 /* noi dung 6 */
 .block-6 {
     margin-top: 30px;
@@ -507,22 +448,6 @@ a {
     text-align: center;
     line-height: 1.5;
     font-weight: var(--font-weight);
-}
-
-.block-6 .info-6 .link-6 {
-    display: inline-block;
-    margin-top: 40px;
-    color: #fff;
-    width: 110px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    padding: 10px 10px 6px;
-    text-align: center;
-}
-
-.block-6 .info-6 .link-6:hover {
-    background-color: rgb(0, 0, 0, 0.1);
 }
 
 /* guides */
