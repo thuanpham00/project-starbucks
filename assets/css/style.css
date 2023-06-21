@@ -16,7 +16,7 @@ body {
     font-family: "SoDo Sans";
 }
 
-/*Common (thành phần dùng chung)*/
+/*Common (thành phần dùng chung - class dùng chung)*/
 .content {
     width: 1440px;
     max-width: calc(100% - 48px);
@@ -33,6 +33,30 @@ a {
     --color: #006241;
     --color-1: #1e3932;
     --font-weight: 400;
+}
+
+.sub-title {
+    margin-top: 5px;
+    text-align: center;
+    max-width: 100%;
+    /* Sử dụng max-width: 100%;, 
+    điều này đảm bảo rằng chữ không tràn ra ngoài box và tự động co lại 
+    phù hợp với kích thước của box khi phóng to hoặc thu nhỏ. */
+    font-size: 4.8rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.desc {
+    margin-top: 100px;
+    font-size: 2.4rem;
+    width: 550px;
+    height: 100px;
+    max-width: calc(100% - 20px);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: var(--font-weight);
 }
 
 .btn {
@@ -60,10 +84,9 @@ a {
 /* HEADER */
 .header {
     position: sticky;
-    top: -15px;
     z-index: 1;
-    height: 100px;
-    padding: 25px 0;
+    top: -10px;
+    padding: 25px 0 15px;
     background-color: #fff;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -157,32 +180,15 @@ a {
     padding: 160px 0;
 }
 
-.block-1 .info .sub-title {
-    margin-top: 5px;
-    text-align: center;
+.sub-title.sub-1 {
     width: 300px;
     height: 50px;
-    font-size: 4.8rem;
-    max-width: 100%;
-    /* Sử dụng max-width: 100%;, 
-    điều này đảm bảo rằng chữ không tràn ra ngoài box và tự động co lại 
-    phù hợp với kích thước của box khi phóng to hoặc thu nhỏ. */
     color: #ffffff;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-weight: 700;
 }
 
-.block-1 .info .desc {
-    margin-top: 100px;
-    font-size: 2.4rem;
-    max-width: calc(100% - 20px);
-    color: #ffffff;
+.desc.desc-1 {
     width: 500px;
-    height: 100px;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
+    color: #ffffff;
 }
 
 .block-1 .img-info img {
@@ -218,29 +224,14 @@ a {
     padding: 160px 0;
 }
 
-.block-2 .info-2 .sub-title-2 {
-    text-align: center;
-    margin-top: 5px;
+.sub-title.sub-2 {
     width: 400px;
     height: 36px;
-    font-size: 4.8rem;
-    max-width: 100%;
     color: var(--color-1);
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-weight: 700;
 }
 
-.block-2 .info-2 .desc-2 {
-    margin-top: 100px;
-    font-size: 2.4rem;
-    max-width: calc(100% - 20px);
+.desc.desc-2 {
     color: var(--color-1);
-    width: 550px;
-    height: 100px;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
 }
 
 /* noi dung 3 */
@@ -269,29 +260,14 @@ a {
     padding: 160px 0;
 }
 
-.block-3 .info-3 .sub-title-3 {
-    text-align: center;
-    margin-top: 5px;
+.sub-title.sub-3 {
     width: 400px;
     height: 36px;
-    font-size: 4.8rem;
-    max-width: 100%;
     color: var(--color-1);
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-weight: 700;
 }
 
-.block-3 .info-3 .desc-3 {
-    margin-top: 100px;
-    font-size: 2.4rem;
-    max-width: calc(100% - 20px);
+.desc.desc-3 {
     color: var(--color-1);
-    width: 550px;
-    height: 100px;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
 }
 
 /* noi dung 4 */
@@ -320,29 +296,15 @@ a {
     padding: 160px 0;
 }
 
-.block-4 .info-4 .sub-title-4 {
-    text-align: center;
-    margin-top: 5px;
+.sub-title.sub-4 {
     width: 500px;
     height: 36px;
-    font-size: 4.8rem;
-    max-width: 100%;
     color: var(--color-1);
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-weight: 700;
 }
 
-.block-4 .info-4 .desc-4 {
+.desc.desc-4 {
     margin-top: 80px;
-    font-size: 2.4rem;
-    max-width: calc(100% - 20px);
     color: var(--color-1);
-    width: 550px;
-    height: 100px;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
 }
 
 /* noi dung 5 */
@@ -372,29 +334,17 @@ a {
     padding: 80px 0;
 }
 
-.block-5 .info-5 .sub-title-5 {
-    text-align: center;
-    margin-top: 5px;
+.sub-title.sub-5 {
     width: 500px;
     height: 36px;
     font-size: 2.6rem;
-    max-width: 100%;
     color: var(--color-1);
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-weight: 700;
 }
 
-.block-5 .info-5 .desc-5 {
+.desc.desc-5 {
     margin-top: 50px;
     font-size: 1.8rem;
-    max-width: calc(100% - 20px);
     color: var(--color-1);
-    width: 550px;
-    height: 100px;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
 }
 
 /* noi dung 6 */
@@ -424,30 +374,18 @@ a {
     padding: 80px 0;
 }
 
-.block-6 .info-6 .sub-title-6 {
-    display: inline;
-    text-align: center;
-    margin-top: 5px;
+.sub-title.sub-6 {
     width: 500px;
     height: 36px;
     font-size: 2.5rem;
-    max-width: 100%;
     color: #fff;
-    letter-spacing: 1px;
-    line-height: 1.8;
-    font-weight: 700;
 }
 
-.block-6 .info-6 .desc-6 {
+.desc.desc-6 {
     margin-top: 50px;
-    font-size: 1.8rem;
-    max-width: calc(100% - 20px);
-    color: #fff;
     width: 500px;
-    height: 100px;
-    text-align: center;
-    line-height: 1.5;
-    font-weight: var(--font-weight);
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 /* guides */
